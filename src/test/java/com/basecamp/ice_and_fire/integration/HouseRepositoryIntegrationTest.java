@@ -37,6 +37,6 @@ public class HouseRepositoryIntegrationTest {
                 .get();
 
         //then
-        assertEquals(house.getName(), found.getName());
+        assertEquals(house, found);
     }
 }

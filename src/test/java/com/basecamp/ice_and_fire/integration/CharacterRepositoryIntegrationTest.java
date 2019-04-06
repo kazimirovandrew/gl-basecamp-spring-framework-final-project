@@ -37,6 +37,6 @@ public class CharacterRepositoryIntegrationTest {
                 .get();
 
         //then
-        assertEquals(character.getName(), found.getName());
+        assertEquals(character, found);
     }
 }

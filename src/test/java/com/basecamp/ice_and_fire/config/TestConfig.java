@@ -19,11 +19,19 @@ public class TestConfig {
         return new CharacterService(characterBuilder, characterRepository);
     }
 
+    @Bean
+    public CharacterBuilder characterBuilder(RestTemplate restTemplate,
+                                             CharacterRepository characterRepository,
+                                             HouseRepository houseRepository){
+
+        return new CharacterBuilder(restTemplate, characterRepository, houseRepository);
+    }
+
     @MockBean
     private RestTemplate restTemplate;
 
-    @MockBean
-    private CharacterBuilder characterBuilder;
+//    @MockBean
+//    private CharacterBuilder characterBuilder;
 
     @MockBean
     private CharacterRepository characterRepository;

@@ -1,7 +1,5 @@
 package com.basecamp.ice_and_fire;
 
-import com.basecamp.ice_and_fire.repository.CharacterRepository;
-import com.basecamp.ice_and_fire.util.CharacterBuilder;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
